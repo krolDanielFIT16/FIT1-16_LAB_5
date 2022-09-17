@@ -16,9 +16,9 @@ AM = dist(Ax, Ay, Mx, My)
 BM = dist(Bx, By, Mx, My)
 CM = dist(Cx, Cy, Mx, My)
 
-if (AM < BM) and (AM < CM):
+if (AM <= BM) and (AM <= CM):
     print("A")
-elif (BM < AM) and (BM < CM):
+elif (BM <= AM) and (BM <= CM):
     print("B")
-elif (CM < AM) and (CM < BM):
+elif (CM <= AM) and (CM <= BM):
     print("C")
